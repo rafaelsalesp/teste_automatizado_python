@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+<head>
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teste Automatizado com Python & Selenium</h1>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" class="form-control">
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" class="form-control">
+            
+            <button type="button" onclick="fazerLogin()" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        function fazerLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username === "rafael" && password === "123") {
+                // Redireciona para a página de sucesso
+                window.location.href = "formulario.html";
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
