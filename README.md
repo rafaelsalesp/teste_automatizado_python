@@ -1,2 +1,2 @@
 # teste_automatizado_python
-Meu primeiro teste automatizado com Selenium Webdriver e Python
+Ei pessoal! Só queria compartilhar um pouco sobre o meu primeiro teste automatizado usando o Selenium WebDriver e Python. Uma observação extremamente importante é que você deve sempre se certificar de baixar a versão correta do WebDriver de acordo com o navegador que você está usando. Cada navegador tem seu próprio WebDriver específico, e essa correspondência é essencial para garantir que a automação funcione corretamente.
